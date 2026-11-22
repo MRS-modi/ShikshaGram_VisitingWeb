@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1e3b">
+  <meta name="description" content="ShikshaGram is an education and coaching management concept for attendance, batches, study materials, assessments, progress insights, notices, and teacher-reviewed AI-assisted learning suggestions.">
+  <title>ShikshaGram — Where technology meets education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <div class="section-wrap announcement-content">
+      <span class="announcement-pill"><span class="announcement-dot"></span> New Preview</span>
+      <span class="announcement-text">One connected workspace for modern coaching</span>
+      <a class="announcement-link" href="#simulator">Try interactive demo <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="section-wrap header-inner">
+      <a class="brand" href="#home" aria-label="ShikshaGram home">
+        <img id="headerLogo" src="assets/shikshagram-logo-light.png" alt="ShikshaGram — Where technology meets education" width="230" height="80">
+      </a>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#platform">Platform</a>
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#simulator">AI demo</a>
+        <a class="nav-link" href="#for-everyone">Who it's for</a>
+        <a class="nav-link" href="#faq">FAQs</a>
+        <div class="nav-mobile-cta">
+          <a class="button button-primary button-full" href="#simulator">Test drive ShikshaGram <span>↗</span></a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+          <span id="themeLabel">Dark mode</span>
+        </button>
+        <a class="button button-small button-primary desktop-cta" href="#simulator">Test drive <span>↗</span></a>
+      </div>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <main id="mainContent">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-icon">✦</span> COACHING, CONNECTED</div>
+        <h1>Less admin.<br><span class="gradient-text">More learning.</span></h1>
+        <p class="hero-lede">The smarter way to manage your coaching institute, support your students, and keep every learning journey moving forward.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#simulator">Test drive ShikshaGram <span>→</span></a>
+          <a class="button button-ghost" href="#features"><span class="play-icon" aria-hidden="true">▶</span> Explore features</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>ST</span><span>TC</span><span>PG</span></div>
+          <div>
+            <strong>Made for the whole learning community</strong>
+            <small>Teachers · Students · Parents · Admins</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Illustrative ShikshaGram dashboard preview">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="floating-chip chip-top">
+          <span class="chip-icon chip-green">↗</span>
+          <span><strong>Progress at a glance</strong><small>Learning insights</small></span>
+        </div>
+        <div class="floating-chip chip-bottom">
+          <span class="chip-icon chip-orange">✓</span>
+          <span><strong>Attendance updated</strong><small>Classroom-ready workflow</small></span>
+        </div>
+
+        <div class="dashboard-window tilt-card">
+          <div class="window-top">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="window-url">shikshagram.app <b>● Demo</b></span>
+            <button class="window-opt-btn" aria-label="Dashboard options">•••</button>
+          </div>
+          <div class="dashboard-body">
+            <aside class="dash-sidebar" aria-label="Dashboard preview navigation">
+              <div class="mini-brand"><span class="mini-mark">S</span><span>Shiksha<strong>Gram</strong></span></div>
+              <div class="side-item active" title="Overview">▦ <span>Overview</span></div>
+              <div class="side-item" title="Students">♙ <span>Students</span></div>
+              <div class="side-item" title="Attendance">✓ <span>Attendance</span></div>
+              <div class="side-item" title="Study room">▤ <span>Study room</span></div>
+              <div class="side-item" title="Performance">▥ <span>Performance</span></div>
+              <div class="side-bottom" title="Settings">⚙ <span>Settings</span></div>
+            </aside>
+            <div class="dash-main">
+              <div class="dash-heading">
+                <div>
+                  <small>MONDAY, 12 OCTOBER</small>
+                  <h3>Good morning, Teacher 👋</h3>
+                  <p>Here’s what’s happening in your institute.</p>
+                </div>
+                <div class="dash-avatar">VT</div>
+              </div>
+              <div class="stat-grid">
+                <div class="stat-card">
+                  <span>Total students</span>
+                  <strong>248</strong>
+                  <small class="positive">↑ 12 this month</small>
+                  <div class="sparkline spark-blue" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+                <div class="stat-card">
+                  <span>Today's attendance</span>
+                  <strong>92<span class="stat-unit">%</span></strong>
+                  <small class="positive">↑ 4.8% this week</small>
+                  <div class="progress-track"><i style="width:92%"></i></div>
+                </div>
+                <div class="stat-card">
+                  <span>Assignments</span>
+                  <strong>18</strong>
+                  <small class="muted">Need review</small>
+                  <div class="assignment-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+              <div class="dash-lower">
+                <div class="chart-card">
+                  <div class="chart-head">
+                    <strong>Learning progress</strong>
+                    <span>Last 6 weeks⌄</span>
+                  </div>
+                  <div class="chart-legend">
+                    <span><i class="legend-navy"></i> Performance</span>
+                    <span><i class="legend-green"></i> Attendance</span>
+                  </div>
+                  <div class="chart-graphic">
+                    <div class="chart-lines"><i></i><i></i><i></i><i></i></div>
+                    <svg viewBox="0 0 400 110" preserveAspectRatio="none" aria-label="Illustrative progress chart">
+                      <path d="M0,84 C30,75 45,82 70,63 S110,72 135,48 S180,60 205,35 S245,50 270,30 S320,36 350,18 S380,25 400,10" fill="none" stroke="#18a76b" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M0,94 C35,92 45,73 75,80 S120,53 150,65 S190,40 220,54 S255,28 290,42 S330,19 360,30 S385,14 400,20" fill="none" stroke="#2463eb" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="chart-labels"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span></div>
+                </div>
+                <div class="tasks-card">
+                  <div class="chart-head">
+                    <strong>Today's checklist</strong>
+                    <span class="tiny-count">3</span>
+                  </div>
+                  <div class="task-row"><span class="task-check checked">✓</span><span>Mark attendance</span></div>
+                  <div class="task-row"><span class="task-check checked">✓</span><span>Share class notes</span></div>
+                  <div class="task-row"><span class="task-check"></span><span>Review test results</span></div>
+                  <div class="task-row"><span class="task-check"></span><span>Send parent update</span></div>
+                  <div class="ai-note">
+                    <span>✦</span>
+                    <div>
+                      <strong>AI learning assistant</strong>
+                      <small>Turn class data into helpful next steps.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="visual-caption"><span class="live-dot"></span> A preview of the ShikshaGram experience <span>•</span> Sample data</div>
+      </div>
+      <div class="hero-background-orb orb-orange" aria-hidden="true"></div>
+      <div class="hero-background-orb orb-green" aria-hidden="true"></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Platform value proposition">
+      <div class="section-wrap trust-inner">
+        <span class="trust-badge">ONE WORKSPACE FOR</span>
+        <div class="trust-items">
+          <strong>Institute management</strong>
+          <i aria-hidden="true"></i>
+          <strong>Student growth</strong>
+          <i aria-hidden="true"></i>
+          <strong>Teacher productivity</strong>
+          <i aria-hidden="true"></i>
+          <strong>Parent connection</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap" id="features">
+      <div class="section-heading">
+        <div class="eyebrow">EVERYTHING IN SYNC</div>
+        <h2>Your institute, <span class="gradient-text">running smarter.</span></h2>
+        <p>Bring the everyday essentials of coaching management into one clear, easy-to-use workspace.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-featured">
+          <div class="feature-visual attendance-visual">
+            <div class="attendance-top"><span>Class 10 · Mathematics</span><span class="pill pill-green">Live demo</span></div>
+            <div class="attendance-number">92<small>%</small></div>
+            <p>Attendance overview</p>
+            <div class="attendance-people"><span>AR</span><span>SK</span><span>VT</span><span>PM</span><span>+24</span></div>
+            <div class="mini-progress"><i style="width:92%"></i></div>
+          </div>
+          <div class="feature-icon orange-icon">✓</div>
+          <h3>Attendance made simple</h3>
+          <p>Keep daily attendance organised, spot patterns, and spend less time managing registers.</p>
+          <a href="#simulator" class="text-link">Explore in the demo <span>→</span></a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon blue-icon">▤</div>
+          <div class="feature-visual notes-visual">
+            <div class="doc-sheet">
+              <span class="doc-tag">STUDY MATERIAL</span>
+              <strong>Algebra<br>Revision Notes</strong>
+              <i></i><i></i><i class="short-line"></i>
+              <div class="doc-bottom">PDF · 8 pages <span>↓</span></div>
+            </div>
+            <div class="doc-bubble">↗</div>
+          </div>
+          <h3>Study materials in one place</h3>
+          <p>Share notes, assignments, and learning resources so students know where to find them.</p>
+          <a href="#simulator" class="text-link">See the workflow <span>→</span></a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon green-icon">↗</div>
+          <div class="feature-visual performance-visual">
+            <span>Class performance</span>
+            <strong>+14.6%</strong>
+            <small>Illustrative improvement</small>
+            <div class="performance-bars">
+              <i style="height:34%"></i><i style="height:46%"></i><i style="height:41%"></i><i style="height:61%"></i><i style="height:70%"></i><i style="height:84%"></i><i style="height:95%"></i>
+            </div>
+          </div>
+          <h3>Marks & progress insights</h3>
+          <p>Record test scores and make progress easier to understand for teachers, students, and parents.</p>
+          <a href="#simulator" class="text-link">View a sample report <span>→</span></a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon violet-icon">♙</div>
+          <div class="feature-visual batches-visual">
+            <div class="batch-row"><span class="batch-avatar">10</span><span><strong>Class 10 · Science</strong><small>32 students</small></span><b>›</b></div>
+            <div class="batch-row"><span class="batch-avatar batch-orange">09</span><span><strong>Class 9 · Maths</strong><small>28 students</small></span><b>›</b></div>
+            <div class="batch-row"><span class="batch-avatar batch-green">12</span><span><strong>Class 12 · Physics</strong><small>24 students</small></span><b>›</b></div>
+          </div>
+          <h3>Batch & student management</h3>
+          <p>Organise classes, student details, and everyday institute information without the clutter.</p>
+          <a href="#simulator" class="text-link">Explore the demo <span>→</span></a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon orange-icon">◉</div>
+          <div class="feature-visual notice-visual">
+            <div class="notice-bell">✦</div>
+            <div>
+              <strong>New class update</strong>
+              <p>Tomorrow's test has moved to 10:30 AM.</p>
+              <small>Sample notice · Just now</small>
+            </div>
+          </div>
+          <h3>Notices & communication</h3>
+          <p>Keep important class updates visible and make communication more consistent.</p>
+          <a href="#simulator" class="text-link">See a sample notice <span>→</span></a>
+        </article>
+
+        <article class="feature-card feature-ai">
+          <div class="feature-icon ai-icon">✦</div>
+          <div class="feature-visual ai-visual">
+            <div class="ai-orb"><span>✦</span></div>
+            <div class="ai-suggestion">
+              <small>AI STUDY SUGGESTION</small>
+              <strong>Revise algebra basics</strong>
+              <span>Suggested from the sample performance data</span>
+            </div>
+          </div>
+          <h3>An AI-assisted learning experience</h3>
+          <p>Explore a concept demo that turns sample student data into clear, practical next-step suggestions.</p>
+          <a href="#simulator" class="text-link">Try the AI simulator <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-wrap detail-section" id="platform">
+      <div class="section-heading">
+        <div class="eyebrow">MORE THAN A DASHBOARD</div>
+        <h2>Everyday learning, <span class="gradient-text">better connected.</span></h2>
+        <p>A closer look at how the ShikshaGram concept can support the daily rhythm of an institute. These are proposed product capabilities, not live services in this preview.</p>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card">
+          <span class="detail-number">01</span>
+          <div class="detail-icon detail-orange">✓</div>
+          <h3>Daily operations</h3>
+          <p>Keep attendance, class lists, batch information, and routine tasks together so teachers can spend less time switching between registers.</p>
+          <ul>
+            <li>Class-wise attendance</li>
+            <li>Batch and student records</li>
+            <li>Daily task checklist</li>
+          </ul>
+        </article>
+        <article class="detail-card">
+          <span class="detail-number">02</span>
+          <div class="detail-icon detail-blue">▤</div>
+          <h3>Learning resources</h3>
+          <p>Give students a clear place to find revision notes, assignments, worksheets, and important learning updates.</p>
+          <ul>
+            <li>Organised study library</li>
+            <li>Assignment reminders</li>
+            <li>Topic-based resources</li>
+          </ul>
+        </article>
+        <article class="detail-card">
+          <span class="detail-number">03</span>
+          <div class="detail-icon detail-green">↗</div>
+          <h3>Progress & support</h3>
+          <p>Make test results easier to review and use them as a starting point for constructive conversations about what to practise next.</p>
+          <ul>
+            <li>Assessment summaries</li>
+            <li>Topics to revisit</li>
+            <li>Teacher-reviewed next steps</li>
+          </ul>
+        </article>
+        <article class="detail-card">
+          <span class="detail-number">04</span>
+          <div class="detail-icon detail-violet">♡</div>
+          <h3>Family communication</h3>
+          <p>Help parents and guardians stay informed with clear, respectful updates and a shared understanding of learning goals.</p>
+          <ul>
+            <li>Sample parent updates</li>
+            <li>Important notices</li>
+            <li>Learning milestones</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-wrap principles-section" id="principles">
+      <div class="principles-copy">
+        <div class="eyebrow">BUILT WITH CARE</div>
+        <h2>Useful technology.<br><span class="gradient-text">Human-led learning.</span></h2>
+        <p>ShikshaGram is designed around a simple idea: technology should help educators make better-informed decisions, not replace their judgement or the relationships that help students learn.</p>
+        <div class="principle-list">
+          <div>
+            <span>✓</span>
+            <section>
+              <strong>Teacher in the loop</strong>
+              <p>AI-style suggestions are prompts to review, adapt, or ignore—not automatic decisions about a learner.</p>
+            </section>
+          </div>
+          <div>
+            <span>✓</span>
+            <section>
+              <strong>Privacy-conscious by design</strong>
+              <p>This browser demo uses fictional sample data. A real launch should add consent, access controls, secure storage, and clear data-retention policies.</p>
+            </section>
+          </div>
+          <div>
+            <span>✓</span>
+            <section>
+              <strong>Clear about what is real</strong>
+              <p>The interactive AI panel is scripted for demonstration. Live AI, accounts, cloud files, and notifications require separate integrations.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="principles-visual">
+        <div class="principle-orbit" aria-hidden="true"></div>
+        <div class="principle-center">
+          <span>SG</span>
+          <strong>Learn with<br>confidence</strong>
+          <small>Technology + educator judgement</small>
+        </div>
+        <div class="principle-float pf-one">Teacher-led <b>✓</b></div>
+        <div class="principle-float pf-two">Privacy-aware <b>✓</b></div>
+        <div class="principle-float pf-three">Student-first <b>✓</b></div>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="how">
+      <div class="section-wrap workflow-grid">
+        <div class="workflow-copy">
+          <div class="eyebrow">SIMPLE BY DESIGN</div>
+          <h2>From daily tasks to <span class="gradient-text">clear progress.</span></h2>
+          <p>ShikshaGram is designed to make common coaching workflows easier to follow, whether you're running a class or keeping up with learning at home.</p>
+          <div class="steps workflow-carousel" id="workflowCarousel" aria-label="How ShikshaGram works" tabindex="0">
+            <article class="step workflow-slide active" aria-hidden="false">
+              <span>01</span>
+              <div>
+                <h3>Set up your institute</h3>
+                <p>Organise classes, batches, and student profiles in one place.</p>
+                <small class="slide-kicker">START WITH A CLEAR SPACE</small>
+              </div>
+            </article>
+            <article class="step workflow-slide" aria-hidden="true">
+              <span>02</span>
+              <div>
+                <h3>Manage the daily routine</h3>
+                <p>Use one workspace for attendance, resources, notices, and marks.</p>
+                <small class="slide-kicker">MAKE EVERYDAY TASKS EASIER</small>
+              </div>
+            </article>
+            <article class="step workflow-slide" aria-hidden="true">
+              <span>03</span>
+              <div>
+                <h3>Understand what comes next</h3>
+                <p>Review progress and explore suggested actions for better support.</p>
+                <small class="slide-kicker">TURN INFORMATION INTO ACTION</small>
+              </div>
+            </article>
+            <div class="workflow-carousel-controls">
+              <div class="workflow-nav-arrows">
+                <button class="workflow-nav-btn" id="workflowPrev" aria-label="Previous workflow step">‹</button>
+                <button class="workflow-nav-btn" id="workflowNext" aria-label="Next workflow step">›</button>
+              </div>
+              <div class="workflow-dots" role="tablist" aria-label="Workflow slides">
+                <button class="workflow-dot active" data-slide="0" aria-label="Show step 1" aria-selected="true"></button>
+                <button class="workflow-dot" data-slide="1" aria-label="Show step 2" aria-selected="false"></button>
+                <button class="workflow-dot" data-slide="2" aria-label="Show step 3" aria-selected="false"></button>
+              </div>
+              <button class="workflow-pause" id="workflowPause" aria-pressed="false">Ⅱ Pause</button>
+            </div>
+          </div>
+        </div>
+        <div class="workflow-art" aria-hidden="true">
+          <div class="workflow-glow"></div>
+          <div class="workflow-card card-one">
+            <span class="workflow-card-icon">✓</span>
+            <div><strong>Classroom routine</strong><small>Attendance · Notes · Tests</small></div>
+            <span class="check-badge">✓</span>
+          </div>
+          <div class="workflow-card card-two">
+            <span class="workflow-card-icon green-card-icon">↗</span>
+            <div><strong>Progress snapshot</strong><small>Results made easier to read</small></div>
+            <div class="tiny-bars"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="workflow-card card-three">
+            <span class="workflow-card-icon orange-card-icon">✦</span>
+            <div><strong>Suggested next step</strong><small>Review topics needing attention</small></div>
+          </div>
+          <div class="workflow-center">
+            <span class="workflow-center-mark">S</span>
+            <strong>One connected<br>learning space</strong>
+            <small>Sample product visualization</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap simulator-section" id="simulator">
+      <div class="simulator-intro">
+        <div class="eyebrow"><span class="eyebrow-icon">✦</span> INTERACTIVE PRODUCT PLAYGROUND</div>
+        <h2>Test Drive ShikshaGram<br><span class="gradient-text">Right in Your Browser.</span></h2>
+        <p>Explore the product concept without an account. Switch between sample roles, update fictional attendance records, preview learning resources, and generate a teacher-reviewed suggestion from a scripted scenario.</p>
+        <div class="simulator-meta">
+          <span>● Sample data only</span>
+          <span>✓ No sign-in needed</span>
+          <span>✦ AI concept simulator</span>
+        </div>
+      </div>
+
+      <div class="simulator-shell">
+        <div class="simulator-topbar">
+          <div class="simulator-brand">
+            <span class="mini-mark">S</span>
+            <div>
+              <strong>ShikshaGram demo</strong>
+              <small>Interactive preview environment</small>
+            </div>
+          </div>
+          <div class="demo-badge"><span></span> LIVE PREVIEW</div>
+          <button class="reset-demo" id="resetDemo" title="Reset all demo states">↻ Reset demo</button>
+        </div>
+
+        <div class="simulator-layout">
+          <aside class="sim-sidebar" aria-label="Demo workspace navigation">
+            <small class="sim-sidebar-title">WORKSPACE</small>
+            <div class="sim-nav-group">
+              <button class="sim-nav active" data-panel="overview">▦ <span>Overview</span></button>
+              <button class="sim-nav" data-panel="attendance">✓ <span>Attendance</span></button>
+              <button class="sim-nav" data-panel="materials">▤ <span>Study materials</span></button>
+              <button class="sim-nav" data-panel="performance">↗ <span>Performance</span></button>
+            </div>
+            <div class="sim-sidebar-bottom">
+              <span class="demo-avatar">VT</span>
+              <div>
+                <strong>Demo Teacher</strong>
+                <small>Sample workspace</small>
+              </div>
+            </div>
+          </aside>
+
+          <div class="sim-content">
+            <div class="sim-toolbar">
+              <div>
+                <span class="sim-breadcrumb">Demo workspace / <b id="panelCrumb">Overview</b></span>
+                <h3 id="panelTitle">Welcome back, Teacher 👋</h3>
+                <p id="panelSubtitle">Here’s a sample view of your institute.</p>
+              </div>
+              <label class="role-select-label" for="roleSelect">
+                VIEW AS
+                <div class="select-wrapper">
+                  <select id="roleSelect">
+                    <option value="teacher">Teacher</option>
+                    <option value="student">Student</option>
+                    <option value="parent">Parent</option>
+                    <option value="admin">Admin</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <div id="demoPanel" class="demo-panel">
+              <div class="demo-stats">
+                <div class="demo-stat">
+                  <span id="statOneLabel">Students</span>
+                  <strong id="statOne">248</strong>
+                  <small>Sample institute</small>
+                </div>
+                <div class="demo-stat">
+                  <span id="statTwoLabel">Attendance today</span>
+                  <strong id="statTwo">92%</strong>
+                  <small class="stat-good">● Sample metric</small>
+                </div>
+                <div class="demo-stat">
+                  <span id="statThreeLabel">Assignments to review</span>
+                  <strong id="statThree">18</strong>
+                  <small>Illustrative data</small>
+                </div>
+              </div>
+
+              <div class="demo-work-grid">
+                <div class="demo-widget">
+                  <div class="widget-heading">
+                    <strong id="widgetTitle">Today's attendance</strong>
+                    <span class="widget-tag">DEMO</span>
+                  </div>
+                  <p id="widgetDescription">Mark a sample student present to see the attendance count update.</p>
+                  <div class="student-list" id="studentList">
+                    <div class="student-row" data-student="Aarav Sharma">
+                      <span class="student-avatar avatar-a">AS</span>
+                      <span><strong>Aarav Sharma</strong><small>Class 10 · Maths</small></span>
+                      <button class="attendance-button present" data-present="true" data-index="0">Present ✓</button>
+                    </div>
+                    <div class="student-row" data-student="Meera Patel">
+                      <span class="student-avatar avatar-b">MP</span>
+                      <span><strong>Meera Patel</strong><small>Class 10 · Maths</small></span>
+                      <button class="attendance-button" data-present="false" data-index="1">Mark present +</button>
+                    </div>
+                    <div class="student-row" data-student="Kabir Khan">
+                      <span class="student-avatar avatar-c">KK</span>
+                      <span><strong>Kabir Khan</strong><small>Class 10 · Maths</small></span>
+                      <button class="attendance-button" data-present="false" data-index="2">Mark present +</button>
+                    </div>
+                  </div>
+                  <div class="widget-foot">
+                    <span id="attendanceCount">1 of 3 marked present in this mini-demo</span>
+                    <button class="text-button" id="markAll">Mark all present →</button>
+                  </div>
+                </div>
+
+                <div class="demo-widget ai-widget">
+                  <div class="ai-widget-head">
+                    <span class="ai-star">✦</span>
+                    <div>
+                      <strong>AI learning assistant</strong>
+                      <small>Scripted example · not live AI</small>
+                    </div>
+                    <span class="ai-online" aria-label="Online">●</span>
+                  </div>
+                  <p>Choose a scenario to see a structured example with a suggested action and a review checklist.</p>
+                  <label class="field-label" for="aiScenario">What would you like help with?</label>
+                  <div class="select-wrapper">
+                    <select id="aiScenario">
+                      <option value="attendance">Attendance has dropped</option>
+                      <option value="maths">A student struggles with algebra</option>
+                      <option value="revision">Plan a revision session</option>
+                      <option value="parent">Write a parent update</option>
+                    </select>
+                  </div>
+                  <button class="button button-primary ai-generate" id="generateAdvice"><span>✦</span> Generate suggestion</button>
+                  <div class="ai-result" id="aiResult" aria-live="polite">
+                    <span class="result-spark">✦</span>
+                    <div>
+                      <strong>Your suggestion will appear here</strong>
+                      <p>This is a scripted demonstration, not a connected AI model. Use it to preview the intended experience.</p>
+                    </div>
+                  </div>
+                  <small class="sim-disclaimer">Illustrative only. A teacher should review context and suitability before using any suggestion.</small>
+                </div>
+              </div>
+              <div class="demo-bottom-note"><span>ⓘ</span> This playground uses fictional sample data. No real student information is collected or saved.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap audience-section" id="for-everyone">
+      <div class="section-heading">
+        <div class="eyebrow">BUILT AROUND PEOPLE</div>
+        <h2>One platform. <span class="gradient-text">Different perspectives.</span></h2>
+        <p>ShikshaGram brings the learning community together, with tools that make sense for each role.</p>
+      </div>
+      <div class="audience-grid">
+        <article class="audience-card">
+          <div class="audience-icon audience-teacher">✎</div>
+          <h3>For teachers</h3>
+          <p>Spend less time juggling records and more time supporting learning.</p>
+          <ul>
+            <li>Attendance and marks</li>
+            <li>Class resources</li>
+            <li>Progress overview</li>
+          </ul>
+        </article>
+        <article class="audience-card">
+          <div class="audience-icon audience-student">✦</div>
+          <h3>For students</h3>
+          <p>Find the information you need to stay organised and prepared.</p>
+          <ul>
+            <li>Study materials</li>
+            <li>Assignment updates</li>
+            <li>Personal progress</li>
+          </ul>
+        </article>
+        <article class="audience-card">
+          <div class="audience-icon audience-parent">♡</div>
+          <h3>For parents</h3>
+          <p>Get a clearer view of class updates and learning progress.</p>
+          <ul>
+            <li>Progress summaries</li>
+            <li>Attendance visibility</li>
+            <li>Important notices</li>
+          </ul>
+        </article>
+        <article class="audience-card">
+          <div class="audience-icon audience-admin">▦</div>
+          <h3>For institute admins</h3>
+          <p>Keep everyday institute information organised in one place.</p>
+          <ul>
+            <li>Student and batch records</li>
+            <li>Institute overview</li>
+            <li>Centralised workflows</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section section-wrap">
+      <div class="cta-card">
+        <div class="cta-orb cta-orb-one" aria-hidden="true"></div>
+        <div class="cta-orb cta-orb-two" aria-hidden="true"></div>
+        <div class="cta-content">
+          <div class="eyebrow eyebrow-light">YOUR NEXT STEP STARTS HERE</div>
+          <h2>Ready to make learning<br>management feel simpler?</h2>
+          <p>Explore the concept, see the workflows, and imagine what a more connected institute could look like.</p>
+          <div class="hero-actions">
+            <a href="#simulator" class="button button-white">Try the interactive demo <span>→</span></a>
+            <a href="#faq" class="button button-outline-light">Read the FAQs</a>
+          </div>
+        </div>
+        <div class="cta-graphic" aria-hidden="true">
+          <div class="cta-mini-card">
+            <span class="cta-mini-icon">✦</span>
+            <div>
+              <strong>Learn. Grow. Together.</strong>
+              <small>Where technology meets education</small>
+            </div>
+            <span class="cta-check">✓</span>
+          </div>
+          <div class="cta-mini-card second-mini">
+            <span class="cta-mini-icon green-mini">↗</span>
+            <div>
+              <strong>Progress, made clearer</strong>
+              <small>One connected learning space</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap faq-section" id="faq">
+      <div class="faq-heading">
+        <div class="eyebrow">GOOD TO KNOW</div>
+        <h2>Questions, <span class="gradient-text">answered.</span></h2>
+        <p>A quick guide to the ShikshaGram concept and this interactive preview.</p>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>What is ShikshaGram? <span aria-hidden="true">＋</span></summary>
+          <p>ShikshaGram is a coaching and learning management platform concept intended to bring student records, attendance, study materials, marks, notices, and progress information into one workspace.</p>
+        </details>
+        <details>
+          <summary>Is this demo connected to a real database? <span aria-hidden="true">＋</span></summary>
+          <p>No. The simulator uses fictional example data in your browser to demonstrate possible workflows. It does not create real student records or send notifications.</p>
+        </details>
+        <details>
+          <summary>Is the AI assistant connected to an AI model? <span aria-hidden="true">＋</span></summary>
+          <p>The current browser demo uses scripted example responses for four scenarios. It does not call a live AI model, use real student data, or provide a diagnosis. A production version would need a secure AI integration and educator review.</p>
+        </details>
+        <details>
+          <summary>Can students and parents use ShikshaGram? <span aria-hidden="true">＋</span></summary>
+          <p>The concept includes different views for teachers, students, parents, and institute administrators. Real role-based accounts and permissions would need to be implemented in the application backend.</p>
+        </details>
+        <details>
+          <summary>Will it work on phones and tablets? <span aria-hidden="true">＋</span></summary>
+          <p>Yes, this promotional site and its interactive demo are designed to adapt fluidly to mobile phones, tablets, laptops, and large desktop screens.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-wrap footer-top">
+      <a class="brand footer-brand" href="#home" aria-label="ShikshaGram home">
+        <img id="footerLogo" src="assets/shikshagram-logo-light.png" alt="ShikshaGram — Where technology meets education" width="230" height="80">
+      </a>
+      <p class="footer-tagline">Bringing the learning community closer, one smarter workflow at a time.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#features">Features</a>
+        <a href="#platform">Platform</a>
+        <a href="#simulator">AI demo</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+    </div>
+    <div class="section-wrap footer-bottom">
+      <span>© <span id="year"></span> ShikshaGram. Concept preview.</span>
+      <span>Made for learning communities <b>♥</b></span>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" title="Scroll back to top">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <!-- Interactive demo preview toast -->
+  <div class="demo-toast" id="demoToast" role="alert" aria-live="assertive" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
